@@ -61,8 +61,16 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"
+          integrity="sha256-KQEerTvekZAMe3S6Tn/GwLKU6Wj7TaCSUoIMMxXhuZM="
+          crossorigin="anonymous"
+        ></script>
       </body>
     </html>
   );

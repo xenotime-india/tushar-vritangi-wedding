@@ -3,6 +3,7 @@ import '../scss/styles.scss';
 import { Helmet } from 'react-helmet';
 import { withPrefix } from 'gatsby';
 import FlipCountdown from '@rumess/react-flip-countdown';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
   return (
@@ -11,12 +12,12 @@ const IndexPage = () => {
         <script src={withPrefix('./static/js/script.js')} />
       </Helmet>
       <div className="sakura-falling"></div>
-      <img
+      <StaticImage
         src="./static/img/dGOOfnA.png"
         alt="image-top-right"
         className="top-right-decoration"
       />
-      <img
+      <StaticImage
         src="./static/img/t6ffnbn.png"
         alt="image-top-left"
         className="top-left-decoration"
