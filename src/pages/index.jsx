@@ -1,12 +1,8 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import '../scss/styles.scss';
-import { Helmet } from 'react-helmet';
-import { withPrefix } from 'gatsby';
-import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
-import '@leenguyen/react-flip-clock-countdown/dist/index.css';
-import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
+  const [count, setCount] = useState(0);
   return (
     <>
       <div className="sakura-falling"></div>
@@ -34,19 +30,14 @@ const IndexPage = () => {
           </p>
         </div>
       </div>
-      <FlipClockCountdown
-        to={'2023-12-7 01:26:58'} // Date/Time
-        labels={['DAYS', 'HOURS', 'MINUTES', 'SECONDS']}
-        labelStyle={{
-          fontSize: 15,
-          fontWeight: 500,
-          textTransform: 'uppercase',
-          color: '#674ea7',
-        }}
-        digitBlockStyle={{ width: 30, height: 60, fontSize: 30 }}
-        separatorStyle={{ color: '#674ea7', size: '6px' }}
-        className="flip-clock"
-      />
+      <div
+        id="myFlipper"
+        class="flipper"
+        data-reverse="true"
+        data-datetime="2023-12-07 00:00:00"
+        data-template="dd|HH|ii|ss"
+        data-labels="Days|Hours|Minutes|Seconds"
+      ></div>
 
       <p className="footer">
         Can't wait to celebrate auspicious moment of our family with you! <br />

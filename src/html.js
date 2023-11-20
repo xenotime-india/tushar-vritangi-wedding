@@ -50,7 +50,6 @@ export default function HTML(props) {
         />
 
         <title>Wedding Invitation | 07th Dec | Hotel, Lemonade, Alwar</title>
-
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
