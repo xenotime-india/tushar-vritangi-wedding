@@ -1,3 +1,8 @@
+(function ($) {
+  setTimeout(() => {
+    $('.sakura-falling').sakura();
+  }, 2000);
+})(jQuery);
 document.addEventListener(
   'click',
   function (event) {
@@ -51,9 +56,3 @@ console.log(
   `%cShaadi me zaroor aana!\n\n`,
   'color: yellow; background:tomato; font-size: 24pt; font-weight: bold'
 );
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Unix timestamp (in seconds) to count down to
-  new Sakura('.sakura-falling');
-  document.getElementById('my_audio').play();
-});

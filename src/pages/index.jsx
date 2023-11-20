@@ -8,9 +8,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 const IndexPage = () => {
   return (
     <>
-      <Helmet>
-        <script src={withPrefix('./js/script.js')} />
-      </Helmet>
       <div className="sakura-falling"></div>
       <img
         src="./img/dGOOfnA.png"
