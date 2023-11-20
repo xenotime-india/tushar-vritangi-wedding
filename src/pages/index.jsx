@@ -9,18 +9,22 @@ const IndexPage = () => {
   return (
     <>
       <Helmet>
-        <script src={withPrefix('./static/js/script.js')} />
+        <script src={withPrefix('./js/script.js')} />
       </Helmet>
       <div className="sakura-falling"></div>
       <StaticImage
-        src="./static/img/dGOOfnA.png"
+        src="../images/dGOOfnA.png"
         alt="image-top-right"
         className="top-right-decoration"
+        placeholder="blurred"
+        layout="fixed"
       />
       <StaticImage
-        src="./static/img/t6ffnbn.png"
+        src="../images/t6ffnbn.png"
         alt="image-top-left"
         className="top-left-decoration"
+        placeholder="blurred"
+        layout="fixed"
       />
       <section id="media"></section>
       <div className="wrap">
@@ -54,7 +58,7 @@ const IndexPage = () => {
         <span></span>
       </p>
       <div className="music">
-        <audio src="./static/mp3/song.mp3" id="my_audio" loop="loop"></audio>
+        <audio src="./mp3/song.mp3" id="my_audio" loop="loop"></audio>
       </div>
       <p className="happiness">
         Join us in our happiness!
