@@ -2,7 +2,8 @@ import * as React from 'react';
 import '../scss/styles.scss';
 import { Helmet } from 'react-helmet';
 import { withPrefix } from 'gatsby';
-import FlipCountdown from '@rumess/react-flip-countdown';
+import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
+import '@leenguyen/react-flip-clock-countdown/dist/index.css';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
@@ -33,15 +34,18 @@ const IndexPage = () => {
           </p>
         </div>
       </div>
-      <FlipCountdown
-        endAt={'2023-12-7 01:26:58'} // Date/Time
-        dayTitle="Days"
-        hourTitle="Hours"
-        minuteTitle="Minutes"
-        secondTitle="Seconds"
-        hideYear
-        hideMonth
-        theme="dark"
+      <FlipClockCountdown
+        to={'2023-12-7 01:26:58'} // Date/Time
+        labels={['DAYS', 'HOURS', 'MINUTES', 'SECONDS']}
+        labelStyle={{
+          fontSize: 15,
+          fontWeight: 500,
+          textTransform: 'uppercase',
+          color: '#674ea7',
+        }}
+        digitBlockStyle={{ width: 30, height: 60, fontSize: 30 }}
+        separatorStyle={{ color: '#674ea7', size: '6px' }}
+        className="flip-clock"
       />
 
       <p className="footer">
