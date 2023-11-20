@@ -1,7 +1,11 @@
-$(document).on('click', function () {
-  document.getElementById('my_audio').play();
-  console.log('Shaadi me zaroor aana');
-});
+document.addEventListener(
+  'click',
+  function (event) {
+    document.getElementById('my_audio').play();
+    console.log('Shaadi me zaroor aana');
+  },
+  false
+);
 
 // being a bit cool :p
 var styles = [
