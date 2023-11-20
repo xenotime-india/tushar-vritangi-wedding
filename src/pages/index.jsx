@@ -12,19 +12,15 @@ const IndexPage = () => {
         <script src={withPrefix('./js/script.js')} />
       </Helmet>
       <div className="sakura-falling"></div>
-      <StaticImage
-        src="../images/dGOOfnA.png"
+      <img
+        src="./img/dGOOfnA.png"
         alt="image-top-right"
         className="top-right-decoration"
-        placeholder="blurred"
-        layout="fixed"
       />
-      <StaticImage
-        src="../images/t6ffnbn.png"
+      <img
+        src="./img/t6ffnbn.png"
         alt="image-top-left"
         className="top-left-decoration"
-        placeholder="blurred"
-        layout="fixed"
       />
       <section id="media"></section>
       <div className="wrap">
