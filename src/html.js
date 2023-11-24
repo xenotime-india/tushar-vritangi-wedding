@@ -28,7 +28,7 @@ export default function HTML(props) {
         />
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/vinitshahdeo/vinitshahdeo/master/images/sonali.jpeg"
+          content="https://tushar-vritangi-wedding.vercel.app/img/t-s.png"
         />
         <meta property="og:url" content="" />
         <meta
@@ -38,15 +38,19 @@ export default function HTML(props) {
         <meta name="twitter:card" content="website" />
         <meta
           name="twitter:site"
-          content="Tushar & Vritangi Wedding Invitation | 07th Dec"
+          content="Tushar & Vritangi Wedding Invitation | 07th Dec 2023"
         />
         <meta
           name="twitter:title"
-          content="Tushar & Vritangi Wedding Invitation | 07th Dec"
+          content="Tushar & Vritangi Wedding Invitation | 07th Dec 2023"
         />
         <meta
           name="twitter:description"
           content="With the divine grace of the almighty, inviting you and your family to Tushar's wedding to be held on 07th December at Hotel, Lemonade, Alwar from 7:00 PM onwards."
+        />
+        <meta
+          name="twitter:image"
+          content="https://tushar-vritangi-wedding.vercel.app/img/t-s.png"
         />
 
         <title>Wedding Invitation | 07th Dec | Hotel, Lemonade, Alwar</title>
